@@ -37,6 +37,11 @@ ESC = html.escape
 # Accessibility options: applied before first paint so saved settings don't flash.
 A11Y_HEAD = """<script>try{var s=JSON.parse(localStorage.getItem('a11y')||'{}')||{},r=document.documentElement;for(var k in s){if(k==='size'){if(s.size&&s.size!==100)r.style.fontSize=s.size+'%'}else if(s[k])r.classList.add('a11y-'+k)}}catch(e){}</script>"""
 
+GA_ID = SITE.get("ga_id", "")
+GA_HEAD = (f"""<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());if(navigator.globalPrivacyControl){{gtag('set','allow_ad_personalization_signals',false);}}gtag('config','{GA_ID}');document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.href||'';if(h.indexOf('cliogrow.com/intake')>-1){{gtag('event','generate_lead',{{method:'intake_form',link_url:h,link_text:(a.textContent||'').trim().slice(0,100),page_path:location.pathname}});}}else if(h.indexOf('tel:')===0){{gtag('event','phone_click',{{link_url:h,page_path:location.pathname}});}}}},true);</script>""" if GA_ID else "")
+
+
 A11Y_ICON = (
     '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">'
     '<circle cx="12" cy="4" r="2.2"/>'
@@ -248,6 +253,7 @@ def render(*, slug, title, description, body, schema=None, og_type="website", cu
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="{SITE.get('theme_color', '#000000')}">
 {A11Y_HEAD}
+{GA_HEAD}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
