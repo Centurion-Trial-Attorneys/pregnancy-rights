@@ -66,7 +66,7 @@ No. It is an unlawful employment practice for an employer to refuse to hire, fir
 
 ## What if I need more time to recover physically?
 
-Five days may not be enough after a miscarriage or stillbirth. If your doctor says you cannot do your job while you recover, you may qualify for pregnancy disability leave. California's regulations define "disabled by pregnancy" to include loss or end of pregnancy and recovery from it (Cal. Code Regs., tit. 2, § 11035(f), (u)). Employers with five or more employees must provide up to four months of pregnancy disability leave per pregnancy, as needed, while you are actually disabled (Cal. Code Regs., tit. 2, §§ 11035(h), 11042). There is no minimum length of service to qualify (Cal. Code Regs., tit. 2, § 11037). (Gov. Code § 12945(a)(1))
+Five days may not be enough after a miscarriage or stillbirth. If your doctor says you cannot do your job while you recover, you may qualify for pregnancy disability leave. California's regulations define "disabled by pregnancy" to include loss or end of pregnancy and recovery from it (Cal. Code Regs., tit. 2, § 11035(f), (u)). Employers with five or more employees must provide up to four months of pregnancy disability leave per pregnancy, as needed, while you are actually disabled (Gov. Code § 12945(a)(1); Cal. Code Regs., tit. 2, §§ 11035(h), 11042). There is no minimum length of service to qualify (Cal. Code Regs., tit. 2, § 11037).
 
 ## Does pregnancy discrimination law still protect me?
 

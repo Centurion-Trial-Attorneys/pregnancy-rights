@@ -87,6 +87,7 @@ def org_schema():
         "legalName": s["firm"],
         "url": f"{BASE}/",
         "telephone": s["phone_e164"],
+        "image": f"{BASE}/og.jpg",
         "description": s["description"],
         "areaServed": {"@type": "State", "name": "California"},
         "knowsAbout": s["knows_about"],
@@ -237,7 +238,7 @@ def render(*, slug, title, description, body, schema=None, og_type="website", cu
 <title>{ESC(full_title)}</title>
 <meta name="description" content="{ESC(description)}">
 <link rel="canonical" href="{url}">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="robots" content="{"noindex" if slug == "404" else "index, follow, max-snippet:-1, max-image-preview:large"}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{SITE['name']}">
 <meta property="og:title" content="{ESC(title)}">
@@ -472,7 +473,7 @@ def main():
             schema.append(faq_schema([q for q in FAQ if q.get("home")]))
         for mid in meta.get("people", []):
             schema.append(person_schema(mid))
-        if slug:
+        if slug and slug != "404":
             schema.append(breadcrumb_schema([("Home", f"{BASE}/"), (meta["title"], page_url(slug))]))
         out = render(
             slug=slug,
