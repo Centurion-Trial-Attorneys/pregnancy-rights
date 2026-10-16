@@ -39,7 +39,7 @@ A11Y_HEAD = """<script>try{var s=JSON.parse(localStorage.getItem('a11y')||'{}')|
 
 GA_ID = SITE.get("ga_id", "")
 GA_HEAD = (f"""<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());if(navigator.globalPrivacyControl){{gtag('set','allow_ad_personalization_signals',false);}}gtag('config','{GA_ID}');document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.href||'';if(h.indexOf('cliogrow.com/intake')>-1){{gtag('event','generate_lead',{{method:'intake_form',link_url:h,link_text:(a.textContent||'').trim().slice(0,100),page_path:location.pathname}});}}else if(h.indexOf('tel:')===0){{gtag('event','phone_click',{{link_url:h,page_path:location.pathname}});}}}},true);</script>""" if GA_ID else "")
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());if(navigator.globalPrivacyControl){{gtag('set','allow_ad_personalization_signals',false);}}gtag('config','{GA_ID}');document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.href||'';if(h.indexOf('cliogrow.com/intake')>-1||h.indexOf('lawbrokr.com')>-1){{gtag('event','generate_lead',{{method:'intake_form',link_url:h,link_text:(a.textContent||'').trim().slice(0,100),page_path:location.pathname}});}}else if(h.indexOf('tel:')===0){{gtag('event','phone_click',{{link_url:h,page_path:location.pathname}});}}}},true);</script>""" if GA_ID else "")
 
 
 A11Y_ICON = (
