@@ -1,0 +1,170 @@
+{
+  "url": "https://pregnancyrights.law",
+  "name": "PregnancyRights.Law",
+  "alt_names": [
+    "Pregnancy Rights Law",
+    "PregnancyRights.Law by SueMyBoss.Law"
+  ],
+  "wordmark_html": "Pregnancy<span>Rights</span><em>.Law</em>",
+  "theme_color": "#1f2a5a",
+  "firm": "Centurion Trial Attorneys, APC",
+  "firm_url": "https://suemyboss.law/",
+  "trade_name_line": "PregnancyRights.Law is operated by Centurion Trial Attorneys, APC, which also operates SueMyBoss.Law.",
+  "fee_disclaimer": "No fee unless we win: clients pay no fees or costs if there is no recovery.",
+  "description": "Pregnancy discrimination lawyers for California workers and working mothers. Help with pregnancy leave, accommodations, lactation breaks, reproductive loss leave, and retaliation.",
+  "footer_blurb": "Pregnancy and working-mother rights for California employees, from the employment attorneys behind <a href=\"https://suemyboss.law/\">SueMyBoss.Law</a>.",
+  "intake_url": "https://attorneyryan.lawbrokr.com/sue-my-boss",
+  "phone_display": "1-888-CALL-RYAN",
+  "phone_e164": "+18882255792",
+  "suemyboss_url": "https://suemyboss.law/",
+  "book_url": "https://suemyboss.law/get-it-in-writing-book/",
+  "author": "ryan-stygar",
+  "team": [
+    {
+      "id": "danielle-rini",
+      "name": "Danielle Rini",
+      "title": "Litigation Counsel",
+      "image": "danielle-rini.jpg"
+    },
+    {
+      "id": "ryan-stygar",
+      "name": "Ryan Stygar",
+      "alt_name": "Attorney Ryan",
+      "title": "Employment Attorney",
+      "image": "ryan-stygar.jpg",
+      "same_as": [
+        "https://suemyboss.law/",
+        "https://ryanstygar.com/",
+        "https://attorneyryan.substack.com/"
+      ]
+    }
+  ],
+  "knows_about": [
+    "Pregnancy discrimination",
+    "Pregnancy Disability Leave",
+    "California Family Rights Act",
+    "Pregnant Workers Fairness Act",
+    "Pregnancy accommodations",
+    "Lactation accommodation",
+    "PUMP for Nursing Mothers Act",
+    "Reproductive loss leave",
+    "Retaliation",
+    "California Fair Employment and Housing Act",
+    "Wrongful termination"
+  ],
+  "categories": {
+    "guide": "Guide",
+    "news": "In the news"
+  },
+  "article_callout": [
+    "Pushed out for being pregnant or a new mom?",
+    "You don't have to choose between your family and your job. Tell us what happened, and we'll help you understand your options."
+  ],
+  "nav": [
+    {
+      "slug": "results",
+      "label": "Results"
+    },
+    {
+      "slug": "danielle-rini",
+      "label": "Danielle Rini"
+    },
+    {
+      "slug": "ryan-stygar",
+      "label": "Attorney Ryan"
+    },
+    {
+      "slug": "articles",
+      "label": "Guides"
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "footer_links": [
+    [
+      "Pregnancy rights at work",
+      "/articles/pregnancy-rights-at-work-california/"
+    ],
+    [
+      "Lactation breaks",
+      "/articles/lactation-breaks-california/"
+    ],
+    [
+      "Leave after a miscarriage",
+      "/articles/reproductive-loss-leave-california/"
+    ],
+    [
+      "Case results",
+      "/results/"
+    ],
+    [
+      "Danielle Rini",
+      "/danielle-rini/"
+    ],
+    [
+      "Attorney Ryan Stygar",
+      "/ryan-stygar/"
+    ],
+    [
+      "FAQ",
+      "/faq/"
+    ]
+  ],
+  "results": [
+    {
+      "amount": 2300000,
+      "type": "Pregnancy Discrimination",
+      "note": "FMLA retaliation and wrongful termination."
+    },
+    {
+      "amount": 215000,
+      "type": "Whistleblower Retaliation / Wrongful Termination",
+      "note": ""
+    },
+    {
+      "amount": 185000,
+      "type": "Wrongful Termination",
+      "note": "Minimum wage violations."
+    },
+    {
+      "amount": 175000,
+      "type": "Wrongful Termination",
+      "note": "Client fired after reporting a boss for bullying."
+    }
+  ],
+  "offices": [
+    {
+      "label": "San Diego",
+      "street": "8880 Rio San Diego Dr., Suite 800",
+      "city": "San Diego",
+      "zip": "92108"
+    },
+    {
+      "label": "Orange County",
+      "street": "1400 Newport Center Dr., Suite 100",
+      "city": "Newport Beach",
+      "zip": "92660"
+    }
+  ],
+  "other_sites": [
+    [
+      "SueMyBoss.Law",
+      "https://suemyboss.law/"
+    ],
+    [
+      "HarassmentLawyers.com",
+      "https://harassmentlawyers.com/"
+    ],
+    [
+      "Severance.law",
+      "https://severance.law/"
+    ],
+    [
+      "Centurion Trial Attorneys",
+      "https://centuriontrialattorneys.com/"
+    ]
+  ],
+  "intake_provider": "Lawbrokr"
+}
