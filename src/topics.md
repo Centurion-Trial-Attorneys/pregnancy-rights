@@ -11,7 +11,7 @@ Ryan can reorder, add, or delete topics anytime.
 - [x] What are my pregnancy rights at work in California
 - [x] Lactation breaks and pumping rights in California
 - [x] Reproductive loss leave after a miscarriage or stillbirth
-- [ ] Fired while pregnant: what to do in the first week
+- [x] Fired while pregnant: what to do in the first week
 - [ ] How to ask for a pregnancy accommodation (with a sample request)
 - [ ] The Pregnant Workers Fairness Act: what it adds for California workers
 - [ ] Pregnancy disability leave vs. CFRA bonding leave: how they stack
