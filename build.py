@@ -108,7 +108,7 @@ def org_schema():
             for o in s["offices"]
         ],
         "employee": [{"@id": person_id(m)} for m in s["team"]],
-        "parentOrganization": {"@type": "LegalService", "name": s["firm"], "url": s["firm_url"]},
+        "parentOrganization": {"@type": "LegalService", "@id": s["firm_id"], "name": s["firm_brand"], "legalName": s["firm"], "url": s["firm_url"]},
     }
 
 
