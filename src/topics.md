@@ -12,7 +12,7 @@ Ryan can reorder, add, or delete topics anytime.
 - [x] Lactation breaks and pumping rights in California
 - [x] Reproductive loss leave after a miscarriage or stillbirth
 - [x] Fired while pregnant: what to do in the first week
-- [ ] How to ask for a pregnancy accommodation (with a sample request)
+- [x] How to ask for a pregnancy accommodation (with a sample request)
 - [ ] The Pregnant Workers Fairness Act: what it adds for California workers
 - [ ] Pregnancy disability leave vs. CFRA bonding leave: how they stack
 - [ ] Paid Family Leave and State Disability Insurance for new parents
