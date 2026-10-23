@@ -195,6 +195,17 @@ def footer_html():
     )
     year = dt.date.today().year
     return f"""
+<aside class="book-band" aria-labelledby="book-band-title">
+  <div class="wrap">
+    <a class="book-cover" href="{s['book_url']}" tabindex="-1" aria-hidden="true"><picture><source srcset="/get-it-in-writing.webp" type="image/webp"><img src="/get-it-in-writing.jpg" width="320" height="479" alt="" loading="lazy"></picture></a>
+    <div>
+      <p class="book-label">The book</p>
+      <h2 id="book-band-title">Know your rights before you need them</h2>
+      <p>Attorney Ryan's book, <em>Get It in Writing: The Ultimate Guide to Your Rights at Work</em> (Penguin), covers pay, breaks, bullying bosses, leave and more, in plain English.</p>
+      <a class="book-btn" href="{s['book_url']}">Get the book</a>
+    </div>
+  </div>
+</aside>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -228,9 +239,23 @@ def footer_html():
 <div class="mobile-cta">{intake_button()}</div>"""
 
 
+
+def book_schema():
+    return {
+        "@type": "Book",
+        "@id": "https://suemyboss.law/get-it-in-writing-book/#book",
+        "name": "Get It in Writing: The Ultimate Guide to Your Rights at Work",
+        "author": {"@type": "Person", "name": "Ryan Stygar", "alternateName": "Attorney Ryan", "@id": f"{BASE}/ryan-stygar/#person", "sameAs": next((m.get("same_as", []) for m in SITE["team"] if m["id"] == "ryan-stygar"), [])},
+        "publisher": {"@type": "Organization", "name": "Penguin Random House"},
+        "url": SITE["book_url"],
+        "image": f"{BASE}/get-it-in-writing.jpg",
+        "inLanguage": "en",
+    }
+
+
 def render(*, slug, title, description, body, schema=None, og_type="website", current=None):
     url = page_url(slug)
-    graph = [org_schema()]
+    graph = [org_schema(), book_schema()]
     if schema:
         graph.extend(schema)
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=1)

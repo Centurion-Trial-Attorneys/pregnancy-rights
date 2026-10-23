@@ -282,3 +282,18 @@ ul.facts { padding: 0; margin: 0; }
 /* Links to the firm's other sites */
 .other-sites { margin: 0 0 24px; font-size: 0.95rem; }
 .other-sites a { font-weight: 600; }
+
+
+/* Book band (every page, above the footer) */
+.book-band { background: var(--blush); border-top: 1px solid var(--line); padding: 44px 0; }
+.book-band .wrap { display: grid; grid-template-columns: 140px 1fr; gap: 36px; align-items: center; max-width: 880px; }
+.book-band .book-cover { display: block; box-shadow: 0 10px 24px rgba(0,0,0,0.18); }
+.book-band .book-cover img { display: block; width: 100%; height: auto; }
+.book-band .book-label { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--plum); margin: 0 0 6px; }
+.book-band h2 { margin: 0 0 10px; }
+.book-band p { margin: 0 0 18px; }
+.book-btn { display: inline-block; font-weight: 800; text-decoration: none; color: var(--plum); border: 2px solid var(--plum); background: transparent; padding: 11px 22px; border-radius: 999px; line-height: 1.1; }
+.book-btn:hover, .book-btn:focus-visible { background: var(--plum); color: #fff; }
+@media (max-width: 600px) {
+  .book-band .wrap { grid-template-columns: 92px 1fr; gap: 20px; align-items: start; }
+}
