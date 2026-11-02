@@ -14,7 +14,7 @@ Ryan can reorder, add, or delete topics anytime.
 - [x] Fired while pregnant: what to do in the first week
 - [x] How to ask for a pregnancy accommodation (with a sample request)
 - [x] The Pregnant Workers Fairness Act: what it adds for California workers
-- [ ] Pregnancy disability leave vs. CFRA bonding leave: how they stack
+- [x] Pregnancy disability leave vs. CFRA bonding leave: how they stack
 - [ ] Paid Family Leave and State Disability Insurance for new parents
 - [ ] Can my employer make me take leave I don't want?
 - [ ] Retaliation after returning from maternity leave
