@@ -6,7 +6,7 @@ This site is a top-of-funnel intake site for pregnancy discrimination clients of
 
 ## Rules
 
-- Never publish without Ryan's approval. New drafts go to Ryan's Command Center (https://claude.ai/artifact/Sf2QQGWZXyWDQkdeVF3RX7) as `pending` items with site `pregnancy-rights`. When he approves one there, the Command Center publisher task writes it to `src/articles/`, builds, and pushes to main.
+- Weekly articles publish automatically (Ryan's rule, Nov. 18, 2026). The weekly task creates the item in Ryan's Command Center (https://claude.ai/artifact/Sf2QQGWZXyWDQkdeVF3RX7) with site `pregnancy-rights`, then releases it itself: after the 15-minute spacing check in its task instructions, it marks the item `approved` (approvedBy `auto`) and starts the Command Center publisher task, which writes it to `src/articles/`, builds, and pushes to main. Ryan reviews articles after they are live. Anything else (hand-made items, edits, companions) still waits for Ryan's approval. Never publish any other way.
 - This is attorney advertising under the California Rules of Professional Conduct (rules 7.1-7.5). No guarantees, no unverifiable superlatives ("best," "top-rated"), no case results without the "prior results" disclaimer (results come only from `src/site.json`), no fee claims beyond: "No fee unless we win: clients pay no fees or costs if there is no recovery." Never "free consultation." Buttons say "Get help now."
 - Verify every statute, regulation, and case citation against a primary or official source (leginfo.legislature.ca.gov, law.cornell.edu, courts.ca.gov, calcivilrights.ca.gov, eeoc.gov) before using it. If it can't be verified, leave it out. Ryan checks every cite.
 - California employees only. Federal law is fine where it applies in California.
@@ -30,12 +30,12 @@ Direct second person, plain English, short punchy sentences without stacking one
 ## Article format
 
 - File: `src/articles/<slug>.md`, front matter `title`, `description` (under 160 characters), `date`, `category` (`guide` or `news`), optional `updated`, `author` (team id; default in site.json), `status`.
-- Bylines: every 4th article goes to Danielle Rini (`author: danielle-rini`); the rest are Ryan's (`ryan-stygar`). Number each new article by counting the files in `src/articles/` plus any pregnancy-rights items in the Command Center that are still `pending`, `approved`, or `changes`. The new article gets the next number. If that number is divisible by 4 (4, 8, 12...), use Danielle's byline. On a day with two articles, number the guide first, then the news write-up. Ryan reviews every article before it publishes, whoever the byline names.
+- Bylines: every 4th article goes to Danielle Rini (`author: danielle-rini`); the rest are Ryan's (`ryan-stygar`). Number each new article by counting the files in `src/articles/` plus any pregnancy-rights items in the Command Center that are still `pending`, `approved`, or `changes`. The new article gets the next number. If that number is divisible by 4 (4, 8, 12...), use Danielle's byline. On a day with two articles, number the guide first, then the news write-up. Ryan reviews every article after it publishes, whoever the byline names.
 - Guides: title is the plain question a worker would search. Open with the `<div class="tldr" markdown="1">` block that answers it in 2-3 sentences. Question-style `##` headings, citations in parentheses.
 - Link to at least one existing guide. 700-1,200 words. Check `src/articles/` so topics don't overlap. Topics come from `src/topics.md`.
 - `build.py` adds the closing callout and disclaimer; don't add another.
 
 ## Publishing steps
 
-1. Weekly task: write the drafts, confirm `python3 build.py` builds, and create `pending` items in the Command Center. Don't commit.
-2. Publisher task: write approved items to `src/articles/<slug>.md` exactly as Ryan left them, check off guide topics in `src/topics.md`, build, commit `src/` and `public/`, and push to main.
+1. Weekly task: write the drafts, confirm `python3 build.py` builds, and create the items in the Command Center, then release each one under the 15-minute spacing rule (approve it and start the publisher; a second post waits 15 minutes after the first goes live). Don't commit.
+2. Publisher task (started by the weekly task or when Ryan clicks Approve, plus a daily backup): write approved items to `src/articles/<slug>.md` exactly as they were approved, check off guide topics in `src/topics.md`, build, commit `src/` and `public/`, and push to main.
