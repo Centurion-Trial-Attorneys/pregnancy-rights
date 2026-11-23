@@ -18,7 +18,7 @@ Ryan can reorder, add, or delete topics anytime.
 - [x] Paid Family Leave and State Disability Insurance for new parents
 - [x] Can my employer make me take leave I don't want?
 - [x] Retaliation after returning from maternity leave
-- [ ] Demoted or "restructured" after maternity leave: is it legal?
+- [x] Demoted or "restructured" after maternity leave: is it legal?
 - [ ] Pregnancy discrimination in hiring: interview questions employers can't ask
 - [ ] Light duty and pregnancy: what your employer owes you
 - [ ] Pumping at work under the federal PUMP Act
