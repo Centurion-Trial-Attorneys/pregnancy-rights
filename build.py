@@ -202,7 +202,7 @@ def footer_html():
       <p class="book-label">The book</p>
       <h2 id="book-band-title">Know your rights before you need them</h2>
       <p>Attorney Ryan's book, <em>Get It in Writing: The Ultimate Guide to Your Rights at Work</em> (Penguin), covers pay, breaks, bullying bosses, leave and more, in plain English.</p>
-      <a class="book-btn" href="{s['book_url']}">Get the book</a>
+      <a class="book-btn" href="{s['book_url']}">Buy the book on Amazon</a>
     </div>
   </div>
 </aside>
